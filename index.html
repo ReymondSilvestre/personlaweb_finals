@@ -6,22 +6,32 @@
     <title>Happy Birthday</title>
     <style>
         body {
-            background-image: url('/photos/suga.jpg');
+            background-image: url("photos/background.jpg");
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
         }
 
         h1 {
-            color: #ff6347;
+             color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
             font-size: 50px;
             margin-bottom: 20px;
         }
 
-        p {
-            font-size: 24px;
-            color: #4682b4;
+        h2 {
+             color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+            font-size: 50px;
+            margin-bottom: 20px;
         }
+
+
+        
 
         /* Heart animation */
         .heart-container {
@@ -42,38 +52,6 @@
             animation: draw 2s ease-in-out infinite;
         }
 
-        .heart:before,
-        .heart:after {
-            content: "";
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            border-radius: 50%;
-            background-color: red;
-        }
-
-        .heart:before {
-            top: -50px;
-            left: 0;
-        }
-
-        .heart:after {
-            left: 50px;
-            top: 0;
-        }
-
-        /* Animation for drawing heart */
-        @keyframes draw {
-            0% {
-                transform: scale(0.5);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
 
         /* Suga Picture */
         .suga-img {
@@ -94,19 +72,20 @@
     <h1>🎉 Happy Birthday! 🎉</h1>
 	   <h1>🎉 SHAKERA GWEN 🎉</h1>
 
-    <p>Wishing you love, happiness, and a special day!</p>
+    <h2>Wishing you love, happiness, and be successful!</h2>
 
-
+	    <img src="photos/suga4.jpg" alt="BTS Suga" class="suga-img">
+    <img src="photos/suga1.jpg" alt="BTS Suga" class="suga-img">
+    <img src="photos/suga2.jpg" alt="BTS Suga" class="suga-img">
+    <img src="photos/suga3.jpg" alt="BTS Suga" class="suga-img">
+	
+</br></br>
 
     <!-- BTS Suga Image -->
     <img src="photos/suga.jpg" alt="BTS Suga" class="suga-img">
 
     <p class="balloons">🎈🎈🎈</p>
-	</BR>
-	</BR>
-	    <!-- Heart animation -->
-    <div class="heart-container">
-        <div class="heart"></div>
-    </div>
+
+
 </body>
 </html>
