@@ -1,57 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            background-color: #fff8dc;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
 
-  <meta charset="utf-8">
-  <title>MyPersonal Website</title>
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="style.css">
+        h1 {
+            color: #ff6347;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
 
+        p {
+            font-size: 24px;
+            color: #4682b4;
+        }
+
+        /* Heart animation */
+        .heart-container {
+            margin: 30px auto;
+            width: 100px;
+            height: 60px;
+            position: relative;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: draw 2s ease-in-out infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        /* Animation for drawing heart */
+        @keyframes draw {
+            0% {
+                transform: scale(0.5);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Suga Picture */
+        .suga-img {
+            margin-top: 30px;
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .balloons {
+            margin-top: 20px;
+            font-size: 40px;
+        }
+    </style>
 </head>
+<body>
+    <h1>🎉 Happy Birthday! 🎉</h1>
+	   <h1>🎉 SHAKERA GWEN 🎉</h1>
 
-<body >
-    <nav class="table">
-    <table class="table-container">
-      <th>
-        <a class="home" href="index.html">HOME</a>
-      </th>
-
-      <th>
-        <a class="about" href="about.html">ABOUT</a>
-      </th>
-      <th>
-        <a class="contact" href="contact.html">CONTACTS</a>
-      </th>
-    </table>
-
-  </div>
-</nav>
-  <div class="">
-      <img class="backgound-pic" src="photos/reymond3.png" width="37.2%">
-  </div>
-  <br><br><br><br><br><br><br>
-
-  <div class="info-container">
-    <div class="Info">REYMOND <span class="LName">SILVESTRE</span></div>
-    <hr>
-    <div class="info-sub">A Student At Cstc Sariaya, this is my personal website that i created for myself,
-      for more infomation you can click the about navigation to view my personal details, and contacts
-      to contact me in my personal accounts, and click the home navigation to go back to the main page of my website.</div>
-
-  </div>
-<div class="footer-contact">
-  <img class="backgound-pic" src="photos/fb.png" width="50px">
-  <a class="contact-info"href="https://www.facebook.com/monde.sylvester.30000">Reymond Silvestre</a>
-  <img class="backgound-pic" src="photos/gmail.png" width="50px">
-  <a class="contact-info"href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZfSZKGTMQcKrMRpXzSTPNRssHpVKSjJTgDVwrCZcPHJctvBCzsxLhLWXMbQhmglwPCMHL">Reymonde.silvestre@gmail.com</a>
-  <img class="backgound-pic" src="photos/instagram.png" width="50px">
-  <a class="contact-info"href="https://www.instagram.com/reymond.silvestre28/">Reymond.silvestre28</a>
-</div>
+    <p>Wishing you love, happiness, and a special day!</p>
 
 
 
+    <!-- BTS Suga Image -->
+    <img src="photos/suga.jpg" alt="BTS Suga" class="suga-img">
+
+    <p class="balloons">🎈🎈🎈</p>
+	</BR>
+	</BR>
+	    <!-- Heart animation -->
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
 </body>
-
 </html>
